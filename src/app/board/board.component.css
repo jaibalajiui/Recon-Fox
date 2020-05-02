@@ -1,0 +1,34 @@
+.logo-header{
+  text-align: center ;
+  font-size: 150px;
+}
+#logo-content1, #logo-content2{
+  display: inline-block;
+  border-width: 100px;
+  vertical-align: top;
+  margin: 10px;
+}
+.logo-sub-header{
+  text-align: center;
+}
+.flex-container {
+  display: flex;
+}
+
+.content-center{
+  text-align: center;
+  padding: 20px;
+}
+
+.url-input{
+  margin: 10px ;
+}
+
+div.disabled
+{
+  pointer-events: none;
+
+  /* for "disabled" effect */
+  opacity: 0.5;
+  background: #CCC;
+}

@@ -1,0 +1,34 @@
+<div class="form-check card-items" *ngFor="let source of sourceList">
+  <label class="form-check-label">
+    <input
+        type="radio"
+        name="source"
+        [value]="source.name"
+        required
+        (click)="chooseSource(source)"
+        > {{source.name}}
+  </label>
+</div>
+<div>
+  <button 
+    class="btn btn-lg url-btn btn-success" 
+    (click)="getReconData()"
+    [disabled]="!selectedSource"
+    > Recon ! 
+  </button>
+</div>
+<div class="card bg-light">
+  <div class="card-body text-center">
+    <p class="card-text" *ngIf="response==null else content">
+      Choose the any Reconnaissance Technique Above
+    </p>
+    <ng-template #content>
+      <div *ngIf="showSpinner">
+        <div class="loader">Loading...</div>
+      </div>
+      <pre>
+        {{response}}
+      </pre>
+    </ng-template>
+  </div>
+</div>

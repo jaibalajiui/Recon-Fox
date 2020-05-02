@@ -1,0 +1,36 @@
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div id="logo-content1">
+          <img
+            src="assets/reconfox.png"
+            alt="reconfox-logo"
+            style="height: 250px;"
+          >
+        </div>
+        <div id="logo-content2">
+          <h1 class="logo-header">ReconFox </h1>
+          <h4 class="logo-sub-header"> The Ultimate Reconniser tool by - j41b4l4j1<img src="assets/JB.png" width="40px"/></h4>
+        </div>
+        <div class="input-group">
+          <input type="url"
+            class="form-control form-control-lg url-input"
+            placeholder="Enter the target URL"
+            (input)="setTarget($event)"
+          >
+          
+        </div>
+
+        <p *ngIf="targetUrl.length">
+          Target is <span class="badge badge-primary">{{targetUrl}}</span>
+        </p>
+
+        <div [ngClass]="{'disabled':!targetUrl.length}">
+          <app-info-card></app-info-card>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
