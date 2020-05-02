@@ -7,7 +7,8 @@ Simple Web App to interact with the Hacker Target API for IP Tools.
 ## To run in local 
 
 1. Make sure you have latest nodejs installed.
-2. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
+2. run npm install
+3. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 
 Traceroute - Using mtr an advanced traceroute tool trace the path of an Internet connection.  
 Test Ping	- A common tool for testing connectivity to a host, perform a ping from our server.  
