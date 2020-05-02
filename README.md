@@ -25,4 +25,4 @@ Subnet Lookup Online - Determine the properties of a network subnet
 HTTP Headers -	View HTTP Headers of a web site. The HTTP Headers reveal system and web application details.  
 Page Links -	Dump all the links from a web page.  
 
-![Example](https://github.com/jaibalajiui/ReconFox/blob/master/images/example.png?raw=true)
+![Example](https://github.com/jaibalajiui/Recon-Fox/blob/master/images/example.png?raw=true)
